@@ -9,23 +9,45 @@
 I'm studying in Yanka Kupala State University of Grodno in my third year. My goal in RS School is to learn a lot of new features of JS and React, that will help me find job in this area. I think, I can consider my perfectionism as my strength.
 
 ## Skills
-* C#, a little bit .NET
 * HTML
-* CSS
-* JS basics
+* CSS (Flexbox, Grid)
+* JS, DOM API
+* C#, a little bit .NET
 
 ## Code examples
-My solution for [Fake Binary](https://www.codewars.com/kata/fake-binary/javascript) task from [Codewars](https://www.codewars.com)
+Layout for TODO project
 
-```javascript
-function fakeBin(x){
-  let result = '';
-  for (let i = 0; i < x.length; i++) {
-    result = `${result}${+x[i] >= 5 ? '1' : '0'}`;
-  }
-  
-  return result;
-}
+```html
+<body onload="initializeTODOAreas()">
+    <div class="form">
+      <div class="wrapper">
+        <div class="area">
+          <h3>ADD ITEM</h3>
+          <hr />
+          <form class="input-field">
+            <input
+              type="text"
+              id="user-text"
+              placeholder="Add something here"
+            />
+            <button id="form-button" onclick="addTask()">Add</button>
+          </form>
+        </div>
+
+        <div class="area">
+          <h3>TODO</h3>
+          <hr />
+          <form id="todo"></form>
+        </div>
+
+        <div class="area">
+          <h3>COMPLETED</h3>
+          <hr />
+          <form id="completed"></form>
+        </div>
+      </div>
+    </div>
+  </body>
 ```
 
 ## Education
